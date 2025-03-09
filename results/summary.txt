@@ -1,0 +1,58 @@
+RETAIL DEMAND FORECASTING & INVENTORY OPTIMIZATION SUMMARY
+============================================================
+
+Summary of Results:
+--------------------
+Best performing model: Ensemble (RMSE: 1.8597)
+Forecast reliability improvement: 66.38%
+Optimal order quantity: 58 units
+Reorder point: 48 units
+Safety stock: 0 units
+Total annual inventory cost: $1825.24
+
+Model Comparison:
+               MAE      RMSE        R2      Bias       MAPE       SMAPE       WMAPE      MASE
+Prophet   5.046918  5.457032 -5.274981 -5.046918  93.043442  129.643075  451.382381  1.285665
+VAR       4.986896  5.531765 -5.448028  4.986896  95.598415   58.084496  423.420410  1.270375
+LightGBM  3.390487  4.020076 -2.405399 -2.533072  49.831254   66.340059  389.884561  0.863702
+Ensemble  1.508764  1.859703  0.271236 -1.066378  22.195602   24.290954  174.107154  0.384347
+
+Inventory Parameters:
+avg_demand: 0    6.82277
+Name: avg_demand, dtype: float64
+forecast_std: 0    8.881784e-16
+Name: forecast_std, dtype: float64
+economic_order_quantity: 0    58.407061
+Name: economic_order_quantity, dtype: float64
+safety_stock: 0    3.865240e-15
+Name: safety_stock, dtype: float64
+reorder_point: 0    47.759387
+Name: reorder_point, dtype: float64
+max_inventory: 0    58.407061
+Name: max_inventory, dtype: float64
+avg_inventory: 0    29.203531
+Name: avg_inventory, dtype: float64
+stockout_probability: 0    0.05
+Name: stockout_probability, dtype: float64
+expected_holding_cost: 0    5.840706
+Name: expected_holding_cost, dtype: float64
+expected_stockout_cost: 0    0.170569
+Name: expected_stockout_cost, dtype: float64
+expected_order_cost: 0    5.840706
+Name: expected_order_cost, dtype: float64
+total_expected_cost: 0    11.851981
+Name: total_expected_cost, dtype: float64
+
+Inventory Costs:
+average_inventory: $73.43
+annual_demand: $2490.31
+num_orders: $36.50
+service_level: $1.00
+inventory_turnover: $33.91
+annual_holding_cost: $0.24
+annual_ordering_cost: $1825.00
+annual_stockout_cost: $0.00
+annual_lost_sales_cost: $0.00
+total_annual_cost: $1825.24
+inventory_levels: $106.17
+stockouts: $0.00

@@ -1,0 +1,2 @@
+avg_demand,forecast_std,economic_order_quantity,safety_stock,reorder_point,max_inventory,avg_inventory,stockout_probability,expected_holding_cost,expected_stockout_cost,expected_order_cost,total_expected_cost
+6.822769575165951,8.881784197001252e-16,58.40706111064805,3.8652402523242245e-15,47.75938702616167,58.40706111064806,29.20353055532403,0.050000000000000044,5.840706111064806,0.17056923937914895,5.840706111064805,11.85198146150876
